@@ -1,0 +1,19 @@
+<!-- ////////////STYLE CODE//////////// -->
+<style>
+
+    .margin{
+        margin-bottom: 30px;
+    }
+
+</style>
+
+<!-- ////////////HTML CODE//////////// -->
+<body>
+
+    <!-- //Parent to Child 1: Step4 Displaying data recieved -->
+    <h2>Child Number 2</h2>
+    <p>Here, we'll be sending data from child 2 to parent.</p>
+    <input #box type="text"/>
+    <button (click)="clickevent2(box.value)">Send</button>
+
+</body>

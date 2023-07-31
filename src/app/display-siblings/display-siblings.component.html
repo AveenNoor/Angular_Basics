@@ -1,0 +1,90 @@
+
+  <!-- ////////////STYLE CODE//////////// -->
+
+<style>
+
+    .BodyStyle{
+      background-color: white;
+    }
+  
+    .ParentDiv{
+      background-color: rgb(95, 89, 89);
+      height: 280px;
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      margin-top: 30px;
+    }
+  
+    .ParentText{
+      color: white;
+      margin:auto;
+      text-align: center;
+    }
+  
+    .container {
+      width: 100%;
+      max-width: 800px;
+      height: 300px;
+      margin: 0 auto;
+      display: flex;
+    }
+  
+    .container1{
+      border-color: black;
+      background-color: white;
+      max-width: 350px;
+      height: 250px;
+      margin-left: 13px;
+      padding:10px;
+  
+    }
+  
+    .container2{
+      border-color: black;
+      background-color: white;
+      max-width: 240px;
+      height: 200px;
+      margin-left: 13px;
+      padding:10px;
+  
+    }
+    
+    .column {
+      flex: 1;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    /* Optional: Add some styles to make it visually appealing */
+    .column:nth-child(odd) {
+      background-color: #e0e0e0;
+    }
+    
+    .column:nth-child(even) {
+      background-color: #e0e0e0;
+    }
+  
+  </style>
+  
+<!-- ////////////HTML CODE//////////// -->
+
+  <!-- Child 1+2 Component -->
+  <div class="container">
+
+    <!-- Sibling 1 -->
+    <div class="column">
+      <div class="container1">
+        <app-sibling1></app-sibling1>
+      </div>
+    </div>
+
+    <!-- Sibling 2 -->
+    <div class="column">
+      <div class="container1">
+        <app-sibling2></app-sibling2>
+      </div>
+    </div>
+
+  </div>

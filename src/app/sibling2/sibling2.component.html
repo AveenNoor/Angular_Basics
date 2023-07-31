@@ -1,0 +1,11 @@
+<!-- //Sibling Communication: Step 8 Displaying data recieved from sibling1 -->
+
+<h2>Sibling 2</h2>
+<p> Here ,we will be recieving data from sibling 1:</p>
+<p>{{datafromS1}}</p>
+
+<!-- //Sibling Communication 2->1: Step 5 Sending data to sibling1 -->
+
+<p>Here, we will be sending data to sibling 1:</p>
+<input #box type="text"/>
+<button (click)="sendDatatoS1(box.value)">Send</button>
